@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+<nav>
+    <h1>Elephant Deterrent</h1>
+    <ul class="container text-md-end">
+        <li><a href="/">home</a></li>
+        <li><a href="/admin/dashboard">dashboard</a></li>
+        <li><a href="">Deterrent</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</nav>
+
+{% block content %}
+{% endblock %}
+<link href="{{ url_for('static', filename='js/main.js') }}" rel="stylesheet">
+</body>
+</html>
+

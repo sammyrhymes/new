@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class='upload'>Upload Image</h1>
+    <form method="post" enctype="multipart/form-data" class='upload-form'>
+        {{ form.hidden_tag() }}
+ {{ form.image }}
+        {{ form.submit }}
+    </form>
+{% endblock %}

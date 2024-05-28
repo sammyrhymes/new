@@ -1,0 +1,46 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+nav > h1{
+    display: flex;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+nav > ul > li{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 60px;
+}
+body{
+    width: 80%;
+    margin: auto;
+}
+.upload{
+    margin-top: 50px;
+    font-size: 5rem;
+    text-align: center;
+}
+.upload-form{
+    display: flex;
+    flex-direction: column;
+}
+.logreg{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

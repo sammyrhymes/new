@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Welcome to Elephant Detection System</h2>
+    {% if session.loggedin %}
+        <p>Welcome, {{ session.username }}!</p>
+        {% if session.is_admin %}
+            <a href="/admin/dashboard">Create Admin</a>
+        {% endif %}
+        <a href="/logout">Logout</a>
+    {% else %}
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    {% endif %}
+
+    {% endblock %}

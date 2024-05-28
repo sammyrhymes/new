@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Classification Result</h1>
+    <p>{{ classification }}</p>
+    <a href="{{ url_for('upload_image') }}">Upload Another Image</a>
+{% endblock %}
